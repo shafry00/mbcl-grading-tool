@@ -1,0 +1,11 @@
+services:
+  grading-tool:
+    build: .
+    container_name: mbcl-grading-tool
+    restart: unless-stopped
+    ports:
+      - "3456:3456"
+    env_file:
+      - .env.docker
+    environment:
+      - PORT=3456
