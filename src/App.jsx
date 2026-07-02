@@ -60,6 +60,15 @@ const MENU = [
     badge: 'bg-violet-50 text-violet-700',
     badgeLabel: 'Kelompok 1–9',
   },
+  {
+    id: 'dashboard',
+    icon: '📊',
+    label: 'Semua Penilaian',
+    desc: 'Lihat rekap semua sesi grading, filter per tipe, dan hitung skor sertifikasi',
+    color: 'border-gray-300',
+    badge: 'bg-gray-100 text-gray-600',
+    badgeLabel: 'Dashboard',
+  },
 ];
 
 function HomeMenu({ onSelect }) {
@@ -90,14 +99,6 @@ function HomeMenu({ onSelect }) {
         ))}
       </div>
 
-      <div className="mt-6 text-center">
-        <button
-          onClick={() => onSelect('dashboard')}
-          className="text-xs text-gray-400 hover:text-gray-600 font-medium transition-colors"
-        >
-          Lihat semua penilaian →
-        </button>
-      </div>
     </main>
   );
 }
