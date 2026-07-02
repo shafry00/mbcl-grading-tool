@@ -94,6 +94,13 @@ export default function PanduanModal({ onClose }) {
     a.click();
   }
 
+  function downloadTemplate(ext) {
+    const a = document.createElement('a');
+    a.href = `/templates/template-feedback-finpro.${ext}`;
+    a.download = `template-feedback-finpro.${ext}`;
+    a.click();
+  }
+
   return (
     <div className="fixed inset-0 bg-black/60 flex items-start justify-center z-50 p-4 overflow-y-auto">
       {toast && (
@@ -109,6 +116,22 @@ export default function PanduanModal({ onClose }) {
             <div className="text-sm text-gray-500 mt-0.5">MBCL Cohort 1 — Untuk Teaching Assistant</div>
           </div>
           <div className="flex items-center gap-2">
+            {activeTab === 'final' && (
+              <>
+                <button
+                  onClick={() => downloadTemplate('md')}
+                  className="text-sm px-3 py-2 bg-gray-800 text-white rounded-xl font-bold hover:bg-gray-700 transition-colors shadow-sm"
+                >
+                  ↓ Template .md
+                </button>
+                <button
+                  onClick={() => downloadTemplate('docx')}
+                  className="text-sm px-3 py-2 bg-bl-blue text-white rounded-xl font-bold hover:bg-bl-blue-dark transition-colors shadow-sm"
+                >
+                  ↓ Template .docx
+                </button>
+              </>
+            )}
             <button
               onClick={downloadSkill}
               className="text-sm px-4 py-2 bg-bl-blue text-white rounded-xl font-bold hover:bg-bl-blue-dark transition-colors shadow-sm"

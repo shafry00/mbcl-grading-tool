@@ -120,14 +120,14 @@ Live link sudah dicek — bisa dibuka, fungsi utama jalan, tapi belum mobile-fri
 | **Prototype berfungsi** | 35% | Link tidak bisa dibuka | Bisa dibuka tapi tidak berfungsi | Fungsi utama berjalan tapi ada bug signifikan | Link aktif, fungsi utama berjalan lancar, mobile-friendly |
 | **Relevansi masalah** | 25% | Masalah terlalu umum atau dibuat-buat, tidak ada bukti | Masalah nyata tapi tidak spesifik, tidak ada proses Sharpen | Masalah spesifik dari pekerjaan sehari-hari, ada observasi | Masalah spesifik + ada bukti nyata (data/kutipan) + hipotesis sudah di-challenge ke Claude |
 | **Kualitas deck** | 20% | Slide tidak lengkap atau tidak mengikuti struktur See Clearly → Imagine Boldly → Ship Bravely | Lengkap tapi alur antar pilar tidak terhubung | Alur mengalir tapi proses Diverge/Converge atau Listen Deeply kurang terdokumentasi | Alur kuat: pain conviction → constraint → opsi solusi → pilihan dengan alasan → prototype → gap dari user testing → iterasi terhubung jelas |
-| **Bukti iterasi** | 10% | Tidak ada proses Diverge/Converge — langsung ke satu solusi tanpa eksplorasi | Ada beberapa opsi tapi tidak jelas bagaimana dipilih | Converge terlihat tapi alasan pemilihan lemah, atau gap dari Listen Deeply tidak ditindaklanjuti | Diverge → Converge → Commit jelas, gap dari user testing diidentifikasi, Iterate Fast muncul di Slide 6 |
-| **Refleksi** | 10% | Tidak ada atau sangat generik | Ada tapi tidak mengevaluasi pain conviction — semua positif | Jujur — hambatan diakui, tapi pain conviction tidak dievaluasi ulang | Jujur + pain conviction dievaluasi ulang + next step realistis dan spesifik |
+| **Bukti iterasi** | 10% | Tidak ada proses Diverge/Converge — langsung ke satu solusi tanpa eksplorasi | Ada beberapa opsi tapi tidak jelas bagaimana dipilih | Converge terlihat tapi alasan pemilihan lemah, atau gap dari Listen Deeply tidak ditindaklanjuti | Diverge → Converge → Commit jelas: 5 opsi → pilih 1 dengan alasan kuat → commit ke feature list |
+| **Listen & Iterate** | 10% | Tidak ada user testing (Listen Deeply) maupun perubahan (Iterate Fast) | Ada salah satu saja — feedback user ATAU 1 perubahan — tanpa kaitan jelas | Ada feedback user + 1 perubahan, tapi perubahan kurang nyambung ke feedback spesifik | Feedback user konkret (kebingungan 10 detik pertama) + 1 perubahan cepat yang langsung menjawabnya (idealnya ada before→after) |
 
 ### Formula Skor Akhir
 
 ```
 Skor Akhir = (Skor Prototype × 35) + (Skor Relevansi × 25) +
-             (Skor Deck × 20) + (Skor Iterasi × 10) + (Skor Refleksi × 10)
+             (Skor Deck × 20) + (Skor Iterasi × 10) + (Skor Listen & Iterate × 10)
              ÷ 4
 ```
 
