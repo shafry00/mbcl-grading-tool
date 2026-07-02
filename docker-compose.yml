@@ -9,3 +9,4 @@ services:
       - .env.docker
     environment:
       - PORT=3456
+      - VITE_INSTRUCTOR_PASSWORD

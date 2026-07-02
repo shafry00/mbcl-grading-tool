@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const INSTRUCTOR_PASSWORD = 'REDACTED';
+const INSTRUCTOR_PASSWORD = import.meta.env.VITE_INSTRUCTOR_PASSWORD || '';
 
 const ROLES = [
   { id: 'kelompok-1', label: 'Kelompok 1', icon: '1️⃣', color: 'blue' },
