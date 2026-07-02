@@ -141,8 +141,8 @@ Ada beberapa hal yang perlu diperhatikan sebelum menggunakan:
 
 ## Dibuat Oleh
 
-**Shafry Yusuf Al Juni** — [@shafryyusuf](https://github.com/shafryyusuf)
-Teaching Assistant, Mini Bootcamp Claude Playbook for Non-Tech Professional, Cohort 1 — BelajarLagi
+**Shafry Yusuf Al Juni** — [@shafryyusuf](https://instagram.com/shafryyusuf)
+Instructor Assistant, Mini Bootcamp Claude Playbook for Non-Tech Professional, Cohort 1 — BelajarLagi
 
 ---
 
